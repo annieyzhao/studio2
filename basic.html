@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!-- Referenced (at the bottom of the <body> tag, below other included javascript libraries)-->
+<script type="text/javascript" src="myscript.js">
+
+    </script>
+
+
+<script>
+
+    console.log(rides[0].name);
+    console.log(rides[1].openingDays);
+    console.log(rides[1].openingDays[0]);
+    console.log(rides[2].price/2);
+    console.log(amusementRidesDouble);
+    console.log(logAmusementRides);
+
+</script>
+
+<div id="content-1"></div>
+<div id="content-2"></div>
+
+<div id="newId"></div>
+
+<script type="text/javascript">
+    // Write HTML with JS
+    document.getElementById("content-1").innerHTML = '<h1>Headline</h1>...and some text';
+
+    // Loop through array, build HTML block and finally display it on the page
+    var fruits = ["Orange", "Banana", "Apple"];
+    var result = '';
+    for (var i = 0; i < fruits.length; i++) {
+        result += fruits[i] + "<br/>";
+    }
+
+    document.getElementById("content-2").innerHTML = result;
+    document.getElementById("newId").innerHTML = "we are writing new html";
+</script>
+
+</body>
+</html>
